@@ -1,0 +1,17 @@
+POST http://localhost:3000/api/sp-login
+Content-Type: application/json
+
+{
+    "username":"esmwangi",
+    "password":"Simon_0278"
+}
+
+#######
+
+POST http://localhost:3000/api/sp-query
+Content-Type: application/json
+
+{
+    "query":"Introductory clinical pharmacology 12th edition susan ford nursing test bank",
+    "maxPages":4
+}

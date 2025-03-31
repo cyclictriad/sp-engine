@@ -29,7 +29,7 @@ export async function login(endpoint = '/api/sp-login') {
 
         globalState.auth.progress.success = true
     } catch (error) {
-
+        globalState.auth.credentialsRequested = false;
         globalState.auth.progress.error = error.message ?? 'Auth Failed'
 
     } finally {

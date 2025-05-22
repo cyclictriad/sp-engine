@@ -7,30 +7,14 @@
                     <p class="text-gray-600 mt-1">Find the best testbank results from Studypool</p>
                 </div>
 
-                <UserProfile v-if="isLoggedIn"/>
             </div>
 
-            <div v-if="credentialsRequested">
-                <AuthForm :authChanged="credentialsRequested && isLoggedIn" />
-            </div>
-
-            <div v-else>
-                <QueryForm />
-
-                <QueryResults />
-            </div>
+            <QueryForm />
+            <QueryResults />
         </div>
     </div>
 </template>
 
 <script setup>
-import globalState from '../stores'
 
-const isLoggedIn = computed(() => globalState.auth.progress.success)
-const credentialsRequested = computed(() => globalState.auth.credentialsRequested)
-
-
-onMounted(() => {
-    login()
-})
 </script>

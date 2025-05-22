@@ -1,14 +1,6 @@
 
 
 const globalState = reactive({
-    auth: {
-        credentialsRequested: false,
-        progress: {
-            loading: false,
-            error: null,
-            success: false
-        }
-    },
     search: {
         progress: {
             loading: false,
@@ -18,7 +10,7 @@ const globalState = reactive({
         results: [],
         pagination: {
             currentPage: 1,
-            perPage:10
+            perPage: 10
         }
     },
 

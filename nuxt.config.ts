@@ -32,5 +32,13 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
-  }
+  },
+
+  //support websockets
+
+  nitro: {
+    experimental: {
+      websocket: true
+    }
+  },
 })

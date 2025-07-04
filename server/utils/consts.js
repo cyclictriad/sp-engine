@@ -4,5 +4,6 @@ export const defaultpuppeteerLaunchOptions = {
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage'
     ],
-    executablePath: '/usr/bin/google-chrome'
+    headless:false
+    // executablePath: '/usr/bin/google-chrome'
 }
